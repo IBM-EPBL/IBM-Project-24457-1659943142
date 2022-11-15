@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cloud-object-storage-5k-cos-standard-a5p.s3.jp-tok.cloud-object-storage.appdomain.cloud/styles_2.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body class="bg-gray-200">
+    <div class="title">Using IBM Object Store and Watson AI</div>
+    <div class="image-grid">
+        <a href="https://github.com/IBM-EPBL/IBM-Project-24457-1659943142/tree/main/assignments/sri%20sai"><img src="https://cloud-object-storage-5k-cos-standard-a5p.s3.jp-tok.cloud-object-storage.appdomain.cloud/ss1.jpg"/></a>
+        <a href="https://github.com/IBM-EPBL/IBM-Project-24457-1659943142/tree/main/assignments/sri%20sai"><img src="https://cloud-object-storage-5k-cos-standard-a5p.s3.jp-tok.cloud-object-storage.appdomain.cloud/ss2.jpg"/></a>
+        <a href="https://github.com/IBM-EPBL/IBM-Project-24457-1659943142/tree/main/assignments/sri%20sai"><img src="https://cloud-object-storage-5k-cos-standard-a5p.s3.jp-tok.cloud-object-storage.appdomain.cloud/ss3.jpg"/></a>
+        <a href="https://github.com/IBM-EPBL/IBM-Project-24457-1659943142/tree/main/assignments/sri%20sai"><img src="https://cloud-object-storage-5k-cos-standard-a5p.s3.jp-tok.cloud-object-storage.appdomain.cloud/ss4.jpg"/></a>
+        <a href="https://github.com/IBM-EPBL/IBM-Project-24457-1659943142/tree/main/assignments/sri%20sai"><img src="https://cloud-object-storage-5k-cos-standard-a5p.s3.jp-tok.cloud-object-storage.appdomain.cloud/ss5.jpg"/></a>
+    </div>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "a54398ae-97d5-4367-bba7-73e902aed068", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "f7b0aefe-f766-4973-9ab2-78a47ec33fa6", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>
